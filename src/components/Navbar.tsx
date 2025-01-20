@@ -41,8 +41,8 @@ const Navbar = () => {
               </Link>
               {toolsOpen && (
                 <div className="dropdown">
-                  <Link to="/tools/sub1" className="block px-4 py-2 nav-link hover:bg-gray-50">Sub Tool 1</Link>
-                  <Link to="/tools/sub2" className="block px-4 py-2 nav-link hover:bg-gray-50">Sub Tool 2</Link>
+                  <Link to="/tools/sub1" className="block px-4 py-2 nav-link hover:bg-gray-50">Spanish Conjugations</Link>
+                  <Link to="/tools/sub2" className="block px-4 py-2 nav-link hover:bg-gray-50">Spanish Vocabulary</Link>
                   <Link to="/tools/sub3" className="block px-4 py-2 nav-link hover:bg-gray-50">Sub Tool 3</Link>
                 </div>
               )}
@@ -65,7 +65,7 @@ const Navbar = () => {
             </div>
 
             <Link to="/saas1" className="nav-link">SaaS Tool 1</Link>
-            <Link to="/saas2" className="nav-link">SaaS Tool 2</Link>
+            <Link to="/saas2" className="nav-link">AI Content Worksheets</Link>
           </div>
 
           {/* Right: Profile */}

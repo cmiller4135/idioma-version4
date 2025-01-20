@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import { saveAs } from 'file-saver';
 import { Document, Packer, Paragraph, TextRun } from 'docx';
+import axios from 'axios';
 
 interface GrokResponse {
   text: string;
@@ -76,6 +77,16 @@ Make sure to include ALL verbs and adjectives used in the summary, and ensure pr
       if (!data?.choices?.[0]?.message?.content) {
         throw new Error('Invalid response format from API');
       }
+
+      // Access the usage object from the response
+      const usage = data.usage;
+
+      // Log the token usage details
+      console.log(`Prompt tokens used: ${usage.prompt_tokens}`);
+      console.log(`Completion tokens used: ${usage.completion_tokens}`);
+      console.log(`Total tokens used: ${usage.total_tokens}`);
+      console.log('Json string' + JSON.stringify(data.usage));
+      //console.log('Json string' + JSON.stringify(data.choices[0].message.content));
 
       const content = data.choices[0].message.content;
       
