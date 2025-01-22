@@ -15,6 +15,7 @@ import Sub2 from './pages/tools/Sub2';
 import Sub3 from './pages/tools/Sub3';
 import TeachSub1 from './pages/teach/TeachSub1';
 import TeachSub2 from './pages/teach/TeachSub2';
+import Twilio from './pages/Twilio';
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
@@ -49,6 +50,7 @@ function App() {
         <Route path="/saas1" element={<Layout><Saas1 /></Layout>} />
         <Route path="/saas2" element={<Layout><Saas2 /></Layout>} />
         <Route path="/profile/config" element={<Layout><ProfileConfig /></Layout>} />
+        <Route path="/twilio" element={<Layout><Twilio /></Layout>} />
       </Routes>
     </Router>
   );

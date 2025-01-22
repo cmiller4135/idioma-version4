@@ -66,6 +66,7 @@ const Navbar = () => {
 
             <Link to="/saas1" className="nav-link">SaaS Tool 1</Link>
             <Link to="/saas2" className="nav-link">AI Content Worksheets</Link>
+            <Link to="/twilio" className="nav-link">Twilio</Link>
           </div>
 
           {/* Right: Profile */}
