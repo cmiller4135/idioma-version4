@@ -50,7 +50,7 @@ function App() {
         <Route path="/saas1" element={<Layout><Saas1 /></Layout>} />
         <Route path="/saas2" element={<Layout><Saas2 /></Layout>} />
         <Route path="/profile/config" element={<Layout><ProfileConfig /></Layout>} />
-        <Route path="/twilio" element={<Layout><Twilio /></Layout>} />
+        <Route path="/twilio" element={<Twilio />} />
       </Routes>
     </Router>
   );
